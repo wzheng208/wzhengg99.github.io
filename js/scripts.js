@@ -73,5 +73,8 @@ window.addEventListener('DOMContentLoaded', event => {
     copy2.addEventListener('click', () => {copyToClickBoard('copy-text2')})
 
     const copy3 = document.getElementById('copy3')
-    copy2.addEventListener('click', () => {copyToClickBoard('copy-text3')})
+    copy3.addEventListener('click', () => {copyToClickBoard('copy-text3')})
+
+    const copy4 = document.getElementById('copy4')
+    copy4.addEventListener('click', () => {copyToClickBoard('copy-text4')})
 });

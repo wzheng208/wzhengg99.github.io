@@ -6,7 +6,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>Grayscale - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/odin-logo.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -49,23 +49,35 @@
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
+        <section class="about-section text-center about-section" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">Get Started with Odin's Eye</h2>
-                        <!-- <p class="text-white-50">
-                            Odin’s Eye is the newest innovative solution to a problem that plagues software engineers of all experience levels —easy, aesthetically pleasing monitoring all in one place. 
-                            
-                        </p> -->
+                        <p class="text-white-50">
+                            Odin’s Eye is the newest innovative solution to a problem that plagues software engineers of all experience levels —easy, aesthetically pleasing monitoring all in one place.                           
+                        </p>
                         <h5 class="instructions">
                             Clone
                         </h5>
                         <p class="instructions">Clone the Odin's Eye Repository</p>
                         <div class="clip-board-container instructions">
                             <div class="clip-board">
-                                <p id='copy-text1' class="instructions">git clone https://github.com/oslabs-beta/OdinsEye.git</p>
-                                <button id='copy' class="btn"><img class='clipboard-img' src="assets/img/clip.png"/></button>
+                                <p id='copy-text1' class="instructions">git clone https://github.com/oslabs-beta/OdinsEye.git
+                                    <button id='copy' class="btn"><img class='clipboard-img' src="assets/img/clip.png"/></button>
+                                </p>
+                            </div>
+                        </div>
+                        <h5 class="instructions">
+                            Helm Charts
+                        </h5>
+                        <p class="instructions">Install prometheus using helm charts and replace release name with a name of your choice</p>
+                        <div class="clip-board-container instructions">
+                            <div class="clip-board">
+                                <p id='copy-text2' class="instructions">helm install [release] prometheus-community/kube-prometheus-stack
+                                    <button id='copy2' class="btn"><img class='clipboard-img' src="assets/img/clip.png"/></button>
+                                </p>
+                                
                             </div>
                         </div>
                         <h5 class="instructions">
@@ -74,8 +86,9 @@
                         <p class="instructions">Port-Forward your prometheus instance to port 9090.</p>
                         <div class="clip-board-container instructions">
                             <div class="clip-board">
-                                <p id='copy-text2'class='instructions'>kubectl port-forward -n 'prometheus' prometheus-prometheus-kube-prometheus-prometheus-0 9090</p>
-                                <button id='copy2' class="btn"><img class='clipboard-img' src="assets/img/clip.png" /></button>
+                                <p id='copy-text3'class='instructions'>kubectl port-forward service/[release]-kube-prometheus-prometheus 9090
+                                    <button id='copy3' class="btn"><img class='clipboard-img' src="assets/img/clip.png" /></button>
+                                </p>
                             </div>
                         </div>
                         <h5 class="instructions">
@@ -84,8 +97,9 @@
                         <p class="instructions">Npm install all the packages and npm start then go to http://localhost:3000/</p>
                         <div class="clip-board-container instructions">
                             <div class="clip-board">
-                                <p id='copy-text3'class='instructions'>npm install && npm start</p>
-                                <button id='copy3' class="btn"><img class='clipboard-img' src="assets/img/clip.png"/></button>
+                                <p id='copy-text4'class='instructions'>npm install && npm start
+                                    <button id='copy4' class="btn"><img class='clipboard-img' src="assets/img/clip.png"/></button>
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -102,7 +116,8 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Main Page</h4>
-                            <p class="text-black-50 mb-0">A general summary of the kubernetes instance</p>
+                            <p class="text-black-50 mb-0">You are provided with a general summary of the kubernetes instance 
+                                that are being displayed in both live updating charts and restrospective charts. </p>
                         </div>
                     </div>
                 </div>
@@ -114,7 +129,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Kubernetes Page</h4>
-                                    <p class="mb-0 text-white-50">Select specific namespaces and pods to monitor its metrics</p>
+                                    <p class="mb-0 text-white-50">The ability to navigate to different namespaces within your cluster and select specific pods to monitor.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -129,7 +144,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">MongoDB Page</h4>
-                                    <p class="mb-0 text-white-50">Specifically monitor your mongoDB pods</p>
+                                    <p class="mb-0 text-white-50">An overview of database health metrics for your stateful mongodb application</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -142,10 +157,11 @@
         <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-
+                    <div class="col-md-10 col-lg-8 mx-auto text-center aboutus-div">
                         <h2 class="text-white mb-5">About Us</h2>
-                        <h5 class="text-white mb-5">Contribute to our project</h5>
+                        <p class="text-white mb-5">Check out our <a href="https://medium.com/@chrishicks430/monitoring-made-easy-odins-eye-a7fb6bc4d542">Medium article</a> for more information about the process behind how Odin’s Eye came to be.
+                            Odin’s Eye is an open-source product and while the team that produced this application are extremely proud of their work, there are always ways to improve even the most forward-thinking of products.
+                            If you are interested in contributing to the ongoing development of Odin’s Eye, please feel free to reach out to one of the engineers on their LinkedIn listed at the bottom of this page.</p>
                     </div>
                 </div>
             </div>

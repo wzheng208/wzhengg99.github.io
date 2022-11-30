@@ -11725,8 +11725,10 @@ body {
 }
 
 .clip-board p {
-  margin-top: 80px;
+  margin-top: 70px;
   padding: 10px;
+  padding-top: -15px;
+  padding-bottom: -15px;
   border: 1px solid whitesmoke;
 }
 
@@ -11738,11 +11740,25 @@ body {
 
 .btn {
   background-color: none;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-top: -5px;
 }
 
 .clipboard-img {
   width: 20px;
   height: auto;
+}
+
+.about-section {
+  margin-top: -105px;
+  padding-top: -30px;
+  padding-bottom: 70px;
+}
+
+.aboutus-div {
+  margin-top: -30px;
+  margin-bottom: -30px;
 }
 
 
